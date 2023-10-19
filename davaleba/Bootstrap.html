@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your Page Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    @yield('content')
+</body>
+
+<form method="POST" action="/subscribe">
+    @csrf
+    <input type="email" name="email" placeholder="Your Email">
+    <button type="submit">Subscribe</button>
+</form>
+
+</html>
